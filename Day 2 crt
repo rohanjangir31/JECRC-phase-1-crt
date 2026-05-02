@@ -1,0 +1,190 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // if condition 
+    if(age >= 18) {
+        // logic 
+        cout << "Eligible For vote";
+    }
+    return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 02: THE IF-ELSE BRANCH 🛤️
+// 📝 Task: Handle both eligible and ineligible cases
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // if condition 
+    if(age >= 18) {
+        // logic 
+        cout << "Eligible For vote";
+    } else {
+        // logic 
+        cout << "Not Eligible For vote";
+    }
+    return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 03: NESTED IF-ELSE LOGIC 🕸️
+// 📝 Task: Advanced validation for seniors and invalid ages
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    
+    if(age >= 18) {
+        if (age >= 100) {
+            cout <<"Eligible for Vote (But we are Super senior citizen";
+        } else {
+            cout <<"Eligible for Vote";
+        }
+    } else {
+        if(age < 0) {
+            cout << "Enter a Valid Age number";
+        } else {
+            cout << "Not Eligible for Vote";
+        }
+    }
+    return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 04: TERNARY OPERATOR ⚡
+// 📝 Task: Find the greater number in a single line
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_Number;
+    
+    cin >> a >> b;
+    // Ternary Operator
+    max_Number = (a > b) ? a : b;
+    
+    cout << max_Number;
+    return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 05: CONTINUE STATEMENT ⏭️
+// 📝 Task: Print 1 to N while skipping multiples of 3
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     int n;
+     cin >> n;
+    
+     for(int i = 1; i <= n; i++) {
+         if( i % 3 == 0){
+             continue;
+         }
+         cout << i << " ";
+     }
+     return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 06: BREAK STATEMENT 🛑
+// 📝 Task: Continuous sum until a negative number is entered
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+    
+    while(true) {
+       cin >> n;
+       
+       if(n < 0){
+           break;
+       }
+       sum = sum + n;
+    }
+    cout << sum;
+    return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 07: SMART HOME SYSTEM 🏠
+// 📝 Task: Logic for day/night and motion detection
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     string dayOrNight;
+     bool motionDetected;
+    
+     cout << "is it Day or Night? : ";
+     cin >> dayOrNight;
+     cout << "Is Motion Detected? (1 For Yes, 0 For No): ";
+     cin >> motionDetected;
+    
+     if(dayOrNight == "Night" || dayOrNight == "night"){
+         if(motionDetected) {
+             cout << "Turn on the LED light with 100% brightness..";
+         } else {
+             cout << "Turn on the LED light with only 10Percent of brightness..";
+         }
+     } else {
+         cout << "Turn off the Lights...";
+     }
+     return 0;
+}
+
+// ==============================================
+// 💎 PROBLEM 08: IVR SYSTEM SWITCH 📞
+// 📝 Task: Handle customer support menu selections
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin >> choice;
+    
+    switch(choice) {
+        case 1: 
+        cout <<" Transferring call to the customer support...";
+        break;
+        case 2:
+        cout << "Transferring call to billing and accounts...";
+         break;
+        case 3:
+        cout << "Connecting to Technical help desk...";
+         break;
+        case 4:
+        cout << "Connecting call to the agent...";
+         break;
+        default:
+        cout << " Invalid selection, Enter a valid number...";
+        
+    }
+    return 0;
+}
