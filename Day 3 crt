@@ -173,3 +173,22 @@ int main(){
       cout << "Phone unlocked...";
          return 0 ;
 }
+
+
+//Problem 11
+//Adding water 
+
+#include<iostream>
+using namespace std;
+
+int main(){
+      int add;
+      int currentWater = 0;
+      while(currentWater < 500){
+        cout << "Glass has" << currentWater << "ml. and how much ?";
+        cin >> add ;
+        currentWater = currentWater + add;
+      }
+      cout << "Glass is Full with water:" << currentWater << "ml";
+         return 0 ;
+}
