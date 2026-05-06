@@ -25,3 +25,21 @@ cout<< original ;
 updatedbyReference(original);
 original << original;
 }
+
+//Practice problems
+//
+
+#include <iostream>
+using namespace std;
+int CalculatedAmount(int a){
+return a * 30;
+}
+
+ int main(){
+  int coffee;
+  cin >> coffee;
+
+  cout << CalculatedAmount(coffee);
+    return 0;
+}
+
