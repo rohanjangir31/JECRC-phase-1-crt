@@ -1,0 +1,27 @@
+#include <iostream>;
+using namespace std;
+
+int area(int a , int b = 5){
+return a*b ;
+}
+
+int main(){
+cout << area(10 , 3);
+}
+
+
+//Problem 3--
+//Call by value -- photocopy
+//call by refrence -- Original copy(address)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+int original = 100;
+
+updateValue(original);
+cout<< original ;
+updatedbyReference(original);
+original << original;
+}
