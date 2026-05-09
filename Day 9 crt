@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+
+class Applaince{
+public :
+virtual turnOn(){
+cout
